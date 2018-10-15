@@ -54,9 +54,9 @@ case $1 in
 start)
 sh $CATALINA_HOME/bin/startup.sh
 ;;
-#stop)
-#sh $CATALINA_HOME/bin/shutdown.sh
-#;;
+stop)
+sh $CATALINA_HOME/bin/shutdown.sh
+;;
 restart)
 sh $CATALINA_HOME/bin/shutdown.sh
 sh $CATALINA_HOME/bin/startup.sh
@@ -67,4 +67,3 @@ EOF
 
 # Change permission mode for the service script
 chmod 755 /etc/init.d/tomcat7
-
